@@ -1,0 +1,32 @@
+@font-face{
+    src:url('../fonts/Lexend-Regular.ttf');
+}
+
+VBox{
+    -fx-background-color: '302A74';
+}
+
+Button{
+    -fx-background-color: "#302A74";
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-family: "Lexend";
+}
+
+Separator *.line{
+    -fx-border-width: 0.3px;
+    -fx-border-color: '#FCF6F5';
+}
+
+.contenu{
+    -fx-background-color: 'FCF6F5';
+}
+
+.lbSalles{
+    -fx-font-family: "Lexend";
+    -fx-font-size: 50px;
+}
+
+Button, CheckBox {
+    -fx-cursor: hand;
+}

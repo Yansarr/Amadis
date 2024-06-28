@@ -1,0 +1,6 @@
+module:genevent
+fr.uga.iut2.genevent
+fr.uga.iut2.genevent.controleur
+fr.uga.iut2.genevent.modele
+fr.uga.iut2.genevent.util
+fr.uga.iut2.genevent.vue

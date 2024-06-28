@@ -1,0 +1,122 @@
+Label {
+    -fx-font-family: Lexend;
+}
+
+
+
+RadioButton{
+    -fx-font-family: Lexend;
+}
+
+RadioButton .radio{
+    -fx-padding:5px;
+    -fx-background-color:white;
+    -fx-border-radius:15px;
+    -fx-border-width:3px;
+    -fx-border-color:'#302A74';
+    -fx-background-insets: 0;
+
+}
+
+RadioButton:selected .radio{
+    -fx-background-color:'#302A74';
+}
+
+RadioButton:selected .dot{
+    -fx-background-color: transparent;
+
+}
+
+
+ComboBox {
+	-fx-font-family: Lexend;
+     -fx-background-color: '#302A74';
+     -fx-text-fill:white;
+     -fx-font-size: 18px;
+}
+
+
+ComboBox .arrow{
+    -fx-background-color: white;
+}
+
+ComboBox .list-cell {
+	-fx-text-fill: white;
+	-fx-background-color:'#302A74';
+}
+
+DatePicker{
+    -fx-border-width:5px;
+    -fx-font-family:Lexend;
+    -fx-text-fill:'#302A74';
+    -fx-background-color: '#302A74';
+}
+
+DatePicker .text-field{
+    -fx-text-fill: '#302A74';
+    -fx-font-family: Lexend;
+
+}
+
+DatePicker .cell{
+    -fx-text-fill: '#302A74';
+    -fx-font-family: Lexend;
+}
+
+.date-picker .cell:hover {
+	-fx-background-color: '#302A74';
+	-fx-text-fill:white;
+}
+
+.date-picker-popup .month-year-pane {
+	-fx-background-color: '#302A74';
+}
+
+Date .week-number-cell {
+	-fx-text-fill: '#302A74';
+	-fx-background-color:white;
+}
+
+DatePicker .spinner .button .left-arrow,
+DatePicker .spinner .button .right-arrow {
+	-fx-background-color: white;
+}
+
+DatePicker .spinner .button:hover,
+DatePicker .spinner .button:hover  {
+	-fx-background-radius: 2px;
+}
+
+DatePicker .spinner .button:hover .left-arrow,
+DatePicker .spinner .button:hover .right-arrow {
+	-fx-background-color: blue;
+}
+
+DatePicker .spinner .button:selected .left-arrow,
+DatePicker .spinner .button:selected .right-arrow {
+	-fx-background-color: blue;
+}
+
+.date-picker-popup .month-year-pane .label {
+	-fx-text-fill: white;
+	-fx-font-family: Lexend;
+}
+
+DatePicker .arrow{
+    -fx-background-color: white;
+}
+
+DatePicker .arrow-button{
+    -fx-background-color: '302A74';
+}
+
+
+
+Separator .line{
+    -fx-border-color: '#302A74' ;
+    -fx-border-width: 0.5px;
+}
+
+Button, CheckBox, RadioButton, ComboBox {
+    -fx-cursor: hand;
+}

@@ -1,0 +1,42 @@
+TextArea {
+    -fx-border: none;
+    -fx-background-color: transparent;
+}
+
+
+TextArea .content {
+    -fx-background-radius: 0px;
+    -fx-font-family: Lexend;
+    -fx-background-color: 'BFB9CE';
+}
+
+.btnAjtPiece{
+    -fx-font-size: 23px;
+}
+
+Button, CheckBox {
+    -fx-cursor: hand;
+}
+
+Button {
+    -fx-cursor: hand;
+}
+
+ScrollPane{
+    -fx-background-color:transparent;
+}
+
+ScrollBar{
+    -fx-background-color:transparent;
+}
+
+ScrollBar .thumb{
+    -fx-background-color:'BFB9CE';
+    -fx-height:30px;
+    -fx-background-radius:4px;
+    -fx-padding-top:50px;
+}
+
+ScrollBar .increment-arrow , ScrollBar .decrement-arrow{
+    -fx-opacity:0;
+}

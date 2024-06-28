@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: FCF6F5;" stylesheets="@../css/homepage.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane prefHeight="720.0" prefWidth="1280.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" contentDisplay="BOTTOM" lineSpacing="10.0" mnemonicParsing="false" onAction="#actionbtnNouvelleReservation" prefHeight="720.0" prefWidth="320.0" style="-fx-background-radius: 0; -fx-background-color: FCF6F5;">
+               <graphic>
+                  <VBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="-110.0" translateY="-212.0">
+                           <image>
+                              <Image url="@../assets/amadislogo.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="78.0" prefWidth="182.0" style="-fx-font-family: Lexend; -fx-font-size: 30px;" text="Nouvelle&#10;Réservation" textAlignment="CENTER" translateY="-73.0">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <ImageView fitHeight="94.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" translateY="-73.0">
+                           <image>
+                              <Image url="@../assets/icons8-plus-2-mathematique-64.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label style="-fx-font-family: Lexend; -fx-font-size: 17px;" text="faîtes une nouvelle réservation" translateY="-73.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </graphic></Button>
+            <Button contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#afficherSalle" prefHeight="720.0" prefWidth="320.0" style="-fx-background-color: C0B7CF; -fx-background-radius: 0;" GridPane.columnIndex="1">
+               <graphic>
+                  <VBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Label style="-fx-font-family: Lexend; -fx-font-size: 30px;" text="Nos salles">
+                           <font>
+                              <Font size="29.0" />
+                           </font> fx:id="lbTitre"
+                        </Label>
+                        <ImageView fitHeight="93.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons8-scene-de-concert-64.png" />
+                           </image>
+                        </ImageView>
+                        <Label style="-fx-font-family: Lexend; -fx-font-size: 17px;" text="consultez notre liste de salles">
+                           <font>
+                              <Font size="8.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </graphic></Button>
+            <Button contentDisplay="BOTTOM" maxHeight="720.0" maxWidth="320.0" mnemonicParsing="false" onAction="#actionbtnAgenda" prefHeight="720.0" prefWidth="320.0" style="-fx-background-color: #5b508f; -fx-background-radius: 0;" textFill="#fffdfd" GridPane.columnIndex="2">
+               <graphic>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="680.0" minWidth="302.0" prefHeight="680.0" prefWidth="302.0" spacing="10.0">
+                     <children>
+                        <Label style="-fx-font-family: Lexend; -fx-font-size: 30px;" text="Agenda" textFill="WHITE" translateY="2.0">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="97.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" translateY="2.0">
+                           <image>
+                              <Image url="@../assets/icons8-calendrier-961.png" />
+                           </image>
+                        </ImageView>
+                        <Label style="-fx-font-family: Lexend; -fx-font-size: 17;" text="vérifiez votre agenda" textFill="#fff6f6" translateY="2.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </Button>
+            <Button fx:id="btnMesPieces" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#actionbtnMesPieces" prefHeight="720.0" prefWidth="320.0" style="-fx-background-color: #302a74; -fx-background-radius: 0;" textFill="WHITE" GridPane.columnIndex="3">
+               <graphic>
+                  <VBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Label style="-fx-font-family: Lexend; -fx-font-size: 30;" text="Mes pièces" textFill="WHITE" translateY="15.0">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="95.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" translateY="15.0">
+                           <image>
+                              <Image url="@../assets/icons8-lire-96.png" />
+                           </image>
+                        </ImageView>
+                        <Label style="-fx-font-family: lexend; -fx-font-size: 17px;" text="consultez vos pièces de théatre" textFill="#fff6f6" translateY="15.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font></Label>
+                        <Label alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" style="-fx-font-family: Lexend;" text="Tous droits réservés © 2022" textFill="WHITE" translateX="67.0" translateY="260.0" />
+                     </children>
+                  </VBox>
+               </graphic></Button>
+         </children>
+      </GridPane>
+      <Button fx:id="btnDeco" mnemonicParsing="false" onAction="#deconnexionAction" prefHeight="40.0" prefWidth="173.0" style="-fx-font-family: Lexend; -fx-background-color: transparent; -fx-font-size: 18px;" text="Déconnexion" textFill="WHITE" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

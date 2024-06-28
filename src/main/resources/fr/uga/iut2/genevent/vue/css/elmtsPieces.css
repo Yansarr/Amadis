@@ -1,0 +1,24 @@
+GridPane{
+    -fx-background-radius:4px;
+}
+
+GridPane > AnchorPane > Button{
+    -fx-font-family: 'Lexend';
+    -fx-font-size: 23px;
+    -fx-background-color: 'BFB9CE';
+    -fx-border-radius: 2px;
+}
+
+#lbTitre{
+    -fx-font-size:30px;
+}
+
+TextArea {
+    -fx-font-family: Lexend;
+    -fx-text-fill: '5c5959';
+}
+
+#lbDuree{
+    -fx-font-size:30px;
+    -fx-font-family: Lexend;
+}

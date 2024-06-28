@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="167.0" maxWidth="1000.0" minHeight="150.0" minWidth="500.0" prefHeight="167.0" prefWidth="920.0" style="-fx-background-color: BFB9CE; -fx-background-radius: 4px;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="105.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label fx:id="lbDate" style="-fx-font-family: Lexend;" text="Date de la représentation" textFill="WHITE" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets left="15.0" top="15.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="26.0" />
+            </font></Label>
+        <Label fx:id="lbNomSalle" style="-fx-font-family: Lexend;" text="Nom de la salle" textFill="WHITE" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets left="15.0" top="5.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbTitre" style="-fx-font-family: Lexend;" text="Titre de la Piece" textAlignment="CENTER" textFill="#302a74" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+                <Insets right="15.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnSupprimer" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="161.0" style="-fx-background-color: BFB9CE; -fx-font-family: Lexend; -fx-border-color: fa1c34; -fx-border-radius: 2px; -fx-font-size: 23px;" text="Supprimer" textFill="#fa1c34" translateY="15.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets right="15.0" top="15.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="23.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="20.0" top="40.0" />
+         </GridPane.margin>
+      </HBox>
+    </children>
+    <!--    A COMMENTER POUR UTILISER SCENE BUILDER     -->
+    <!-- ********************************************** -->
+     <VBox.margin>
+     <Insets bottom="10" left="80.0" right="80.0" top="20.0" />
+     </VBox.margin>
+    <!-- ********************************************** -->
+</GridPane>

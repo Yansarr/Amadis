@@ -1,0 +1,19 @@
+#lbNomSalle{
+    -fx-font-size: 28px;
+}
+
+#lbNomVille{
+    -fx-font-size:21px;
+}
+
+#lbCapacite{
+    -fx-font-size: 15px;
+}
+
+#lbPrix{
+    -fx-font-size: 30px;
+}
+
+GridPane{
+    -fx-background-radius:4px;
+}

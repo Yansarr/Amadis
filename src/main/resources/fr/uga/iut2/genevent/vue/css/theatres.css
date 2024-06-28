@@ -1,0 +1,22 @@
+Button {
+    -fx-cursor: hand;
+}
+
+ScrollPane{
+    -fx-background-color:transparent;
+}
+
+ScrollBar{
+    -fx-background-color:transparent;
+}
+
+ScrollBar .thumb{
+    -fx-background-color:'BFB9CE';
+    -fx-height:30px;
+    -fx-background-radius:4px;
+    -fx-padding-top:50px;
+}
+
+ScrollBar .increment-arrow , ScrollBar .decrement-arrow{
+    -fx-opacity:0;
+}

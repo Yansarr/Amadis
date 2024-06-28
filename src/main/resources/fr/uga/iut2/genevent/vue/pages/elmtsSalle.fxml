@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="150.0" maxWidth="1000.0" minHeight="150.0" minWidth="500.0" prefHeight="150.0" prefWidth="1000.0" style="-fx-background-color: BFB9CE; -fx-border-radius: 4px;" stylesheets="@../css/elmtsTheatre.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.2">
+    <columnConstraints>
+        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label fx:id="lbNomSalle" style="-fx-font-family: Lexend;" text="Nom de la salle" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets left="15.0" top="15.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbNomVille" style="-fx-font-family: Lexend;" text="Ville - Adresse" textFill="#5c5959" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets left="15.0" top="5.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="20.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Label>
+        <Label fx:id="lbCapacite" style="-fx-font-family: Lexend;" text="Nombres de places" textFill="#5c5959" GridPane.rowIndex="1">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets left="15.0" top="20.0" />
+            </GridPane.margin>
+        </Label>
+        <Label fx:id="lbPrix" style="-fx-font-family: Lexend;" text="Prix" textFill="#302a74" translateY="5.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+                <Insets right="20.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnReserverMtn" mnemonicParsing="false" prefHeight="55.0" prefWidth="270.0" style="-fx-background-color: #302A74; -fx-font-family: Lexend; -fx-font-size: 23px;" styleClass="book" text="Réserver maintenant" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets right="15.0" top="15.0" />
+            </GridPane.margin>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </children>
+    <!--    A COMMENTER POUR UTILISER SCENE BUILDER     -->
+    <!-- ********************************************** -->
+    <VBox.margin>
+        <Insets bottom="10" left="80.0" right="80.0" top="20.0" />
+    </VBox.margin>
+    <!-- ********************************************** -->
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</GridPane>

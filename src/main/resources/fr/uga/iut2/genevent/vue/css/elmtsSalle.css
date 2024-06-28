@@ -1,0 +1,18 @@
+GridPane > AnchorPane > Button{
+    -fx-font-family: 'Lexend';
+    -fx-font-size: 23px;
+    -fx-background-color: 'BFB9CE';
+    -fx-border-radius: 2px;
+}
+
+TextArea {
+    -fx-border: none;
+    -fx-background-color: transparent;
+}
+
+
+TextArea .content {
+    -fx-background-radius: 0px;
+    -fx-font-family: Lexend;
+    -fx-background-color: 'BFB9CE';
+}

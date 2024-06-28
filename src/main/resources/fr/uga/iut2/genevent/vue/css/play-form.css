@@ -1,0 +1,50 @@
+@font-face{
+    src:url('police/Lexend-Regular.ttf');
+}
+
+Vbox {
+    -fx-background-color: 'FCF6F5';
+}
+
+Label {
+    -fx-font-family: Lexend;
+    -fx-font-size: 15;
+    -fx-text-fill: '302A74';
+}
+
+TextField{
+    -fx-background-color: 'BFB9CE';
+    -fx-background-radius:0;
+    -fx-font-family: Lexend;
+    -fx-text-fill: '302A74';
+    -fx-prompt-text-fill: white;
+    -fx-background-radius: 2px;
+}
+
+Button, CheckBox {
+    -fx-cursor: hand;
+}
+
+
+TextArea {
+    -fx-border: none;
+    -fx-background-color: transparent;
+    -fx-font-family: Lexend;
+   -fx-text-fill: '302A74';
+}
+
+TextArea .content {
+    -fx-background-radius: 2px;
+    -fx-background-color: 'BFB9CE';
+}
+
+TextArea .error-background .content {
+    -fx-background-color: 'E77272';
+}
+
+Button{
+    -fx-font-size: 22px;
+    -fx-background-radius:2px;
+    -fx-font-family: "Lexend";
+}
+

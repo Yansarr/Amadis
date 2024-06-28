@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox fx:id="barre" prefHeight="720.0" prefWidth="210.0" stylesheets="@../css/main.css">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+            <children>
+            <Button mnemonicParsing="false" onAction="#actionbtnAmadis">
+               <graphic>
+                      <ImageView fitHeight="46.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../assets/logoAmadisBlancCropped.png" />
+                          </image>
+                      </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="125.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+                <GridPane prefHeight="303.0" prefWidth="210.0">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="71.0" minHeight="34.0" prefHeight="46.0" />
+                        <RowConstraints maxHeight="64.0" minHeight="32.0" prefHeight="47.0" />
+                        <RowConstraints maxHeight="43.0" minHeight="35.0" prefHeight="43.0" />
+                    </rowConstraints>
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6d679b" height="87.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 0;" translateY="-162.0" width="210.0" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#actionbtnNouvelleReservation" prefHeight="54.0" prefWidth="201.0" style="-fx-background-color: #6d679b;" text="Nouvelle Réservation" />
+                        <Button mnemonicParsing="false" onAction="#afficherSalle" prefHeight="34.0" prefWidth="219.0" text="Salles" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#actionbtnAgenda" prefHeight="46.0" prefWidth="217.0" text="Agenda" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#actionbtnMesPieces" prefHeight="50.0" prefWidth="210.0" text="Pièces de théatre" GridPane.rowIndex="6" />
+                        <Separator maxWidth="150.0" prefWidth="150.0" GridPane.rowIndex="1" />
+                        <Separator maxWidth="150.0" prefWidth="150.0" GridPane.rowIndex="3" />
+                        <Separator maxWidth="150.0" prefWidth="150.0" GridPane.rowIndex="5" />
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </GridPane>
+            </children>
+        </VBox>
+        <VBox fx:id="contenu" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+            <children>
+                <Label fx:id="lbSalles" prefHeight="156.0" prefWidth="854.0" style="-fx-font-family: Lexend;" text="Réservations" textFill="#d3cddb">
+                    <font>
+                        <Font name="System Bold" size="120.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="30.0" top="-5.0" />
+                    </VBox.margin>
+                </Label>
+            <VBox minHeight="502.0" prefHeight="502.0" prefWidth="910.0" style="-fx-background-color: BFB9CE; -fx-background-radius: 4px;" stylesheets="@../css/reservation.css">
+               <children>
+                  <Label style="-fx-font-family: Lexend;" text="Récapitulatif :">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="325.0" prefWidth="870.0" translateY="25.0">
+                     <children>
+                        <GridPane prefHeight="325.0" prefWidth="411.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="120.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="276.0" minWidth="10.0" prefWidth="249.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Théatre :">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets right="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Date :" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets right="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Pièce :" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets right="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <TextField fx:id="tfSalleReservationRecap" editable="false" style="-fx-background-color: FCF6F5;" GridPane.columnIndex="1" />
+                              <TextField fx:id="tfDateReservationRecap" editable="false" style="-fx-background-color: FCF6F5;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="tfPieceReservationRecap" editable="false" style="-fx-background-color: FCF6F5;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" translateX="18.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="30.0" right="32.0" />
+                           </HBox.margin></Separator>
+                        <GridPane prefHeight="325.0" prefWidth="442.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="225.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="165.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Régie lumières :">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets right="20.0" />
+                                 </GridPane.margin></Label>
+                              <Label text="Régie son :" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets right="20.0" />
+                                 </GridPane.margin></Label>
+                              <Label text="Equipe de sécurité :" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets right="20.0" />
+                                 </GridPane.margin></Label>
+                              <Label text="Diffusion de publicité :" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets right="20.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label fx:id="lbRegieLumiereReservationRecap" text="Non" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <Label fx:id="lbRegieSonReservationRecap" text="Non" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbSecuriteReservationRecap" text="Non" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbPubliciteReservationRecap" text="Non" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </GridPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button maxWidth="129.0" minWidth="138.0" mnemonicParsing="false" onAction="#actionbtnRetourResRecap" prefHeight="45.0" style="-fx-background-color: #302A74; -fx-font-family: Lexend; -fx-font-size: 22px;" text="Retour" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Button>
+                         <Circle fill="#302a74" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="412.0" />
+                         <Circle fill="#7771a1" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="412.0" />
+                        <Button mnemonicParsing="false" onAction="#actionbtnConfirmerResRecap" prefHeight="45.0" style="-fx-background-color: #302A74; -fx-font-family: Lexend; -fx-font-size: 22px;" text="Confirmer" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="80.0" right="80.0" />
+               </VBox.margin>
+            </VBox>
+                <Label style="-fx-font-family: Lexend;" text="Tous droits réservés © 2022" textFill="#302a74" translateX="890.0" />
+            </children></VBox>
+    </children>
+</HBox>

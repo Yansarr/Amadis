@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/theatres.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox fx:id="barre" prefHeight="720.0" prefWidth="210.0" stylesheets="@../css/main.css">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+            <children>
+            <Button maxHeight="50.0" maxWidth="100.0" mnemonicParsing="false" onAction="#actionbtnAmadis" prefHeight="50.0" prefWidth="100.0">
+               <graphic>
+                      <ImageView fx:id="actionbtnAmadis" fitHeight="46.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../assets/logoAmadisBlancCropped.png" />
+                          </image>
+                      </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="125.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <GridPane prefHeight="303.0" prefWidth="210.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="71.0" minHeight="34.0" prefHeight="46.0" />
+                  <RowConstraints maxHeight="64.0" minHeight="32.0" prefHeight="47.0" />
+                  <RowConstraints maxHeight="43.0" minHeight="35.0" prefHeight="43.0" />
+              </rowConstraints>
+               <children>
+                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6d679b" height="77.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 0;" translateY="-80.0" width="210.0" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#actionbtnNouvelleReservation" prefHeight="72.0" prefWidth="201.0" text="Nouvelle Réservation" />
+                  <Button minHeight="38.0" mnemonicParsing="false" onAction="#afficherSalle" prefHeight="38.0" prefWidth="219.0" style="-fx-background-color: #6d679b;" text="Salles" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#actionbtnAgenda" prefHeight="46.0" prefWidth="208.0" text="Agenda" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#actionbtnMesPieces" prefHeight="61.0" prefWidth="210.0" text="Pièces de théatre" GridPane.rowIndex="6" />
+                  <Separator maxWidth="150.0" prefWidth="150.0" GridPane.rowIndex="1" />
+                  <Separator maxWidth="150.0" prefHeight="12.0" prefWidth="150.0" GridPane.rowIndex="3" />
+                  <Separator maxWidth="150.0" prefWidth="150.0" GridPane.rowIndex="5" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </GridPane>
+            </children>
+        </VBox>
+        <VBox fx:id="contenu" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+            <children>
+                <Label fx:id="lbSalles" prefHeight="141.0" prefWidth="438.0" style="-fx-font-family: Lexend;" stylesheets="@../css/main.css" text="Salles" textFill="#d3cddb">
+                    <font>
+                        <Font name="System Bold" size="120.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="30.0" top="-5.0" />
+                    </VBox.margin>
+                </Label>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="579.0" prefWidth="1070.0" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="vbListeSalles" alignment="TOP_CENTER" prefHeight="547.0" prefWidth="1049.0">
+                     <children>
+
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <Label style="-fx-font-family: Lexend;" text="Tous droits réservés © 2022" textFill="#302a74" translateX="890.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Label>
+            </children></VBox>
+    </children>
+</HBox>

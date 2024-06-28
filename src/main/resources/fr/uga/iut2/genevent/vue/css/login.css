@@ -1,0 +1,76 @@
+VBox{
+    -fx-background-color: 'FCF6F5';
+}
+
+Label{
+    -fx-font-family:"Lexend";
+}
+
+vbSignUp .content{
+     -fx-font-family: "Lexend";
+}
+
+.lbWelcome{
+    -fx-text-fill: "#302A74";
+}
+
+Button{
+    -fx-background-color: "#302A74";
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-background-radius:2px;
+    -fx-font-family: "Lexend";
+}
+
+CheckBox{
+    -fx-font-size: 15px;
+    -fx-text-fill: #302A74;
+    -fx-font-family: "Lexend";
+}
+
+CheckBox .box {
+    -fx-border-color: '#302A74';
+    -fx-background-color: 'white';
+    -fx-border-radius: 4px;
+    -fx-border-width: 3px;
+    -fx-padding: 2px;
+}
+
+CheckBox:selected .mark {
+    -fx-background-color: white;
+}
+
+CheckBox:selected .box {
+    -fx-background-color: '#302A74';
+}
+
+Separator *.line{
+    -fx-border-color: '#302A74' ;
+    -fx-border-width: 0.5px;
+}
+
+TextField, PasswordField{
+    -fx-background-color: "#DDD7E2";
+    -fx-background-radius:2px;
+    -fx-font-family: Lexend;
+    -fx-text-fill: '#302A74';
+    -fx-max-width: 275px;
+    -fx-min-width: 275px;
+    -fx-min-height: 40px;
+    -fx-max-height: 40px;
+
+}
+
+#btnShow{
+    -fx-font-size: 10px;
+}
+
+Button, CheckBox {
+    -fx-cursor: hand;
+}
+
+
+
+
+
+

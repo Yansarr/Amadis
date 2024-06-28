@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="720.0" prefWidth="1280.0" spacing="20.0" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="48.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+         <VBox.margin>
+            <Insets left="20.0" top="20.0" />
+         </VBox.margin>
+         <image>
+            <Image url="@../assets/logoAmadisBleuCropped.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="39.0" prefWidth="1280.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="245.0" text="Bienvenue!" textFill="#302a74">
+               <font>
+                  <Font size="40.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="-50.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="442.0" prefWidth="1240.0">
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="503.0" prefWidth="546.0">
+               <children>
+                  <Label fx:id="lbLogin" alignment="CENTER" text="Se connecter" textFill="#302a74" VBox.vgrow="NEVER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <GridPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="547.0">
+                    <columnConstraints>
+                      <ColumnConstraints fillWidth="false" halignment="RIGHT" hgrow="SOMETIMES" maxWidth="613.0" minWidth="10.0" prefWidth="259.0" />
+                      <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="SOMETIMES" maxWidth="1077.0" minWidth="10.0" prefWidth="394.0" />
+            
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="92.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="tfEmailConnexion" prefHeight="40.0" prefWidth="275.0" GridPane.columnIndex="1" />
+                        <Label text="E-mail : " textFill="#302a74">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Mot de passe : " textFill="#302a74" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <PasswordField fx:id="pfMDPConnexion" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="150.0" top="125.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <Label fx:id="lbErreurConnexion" prefHeight="17.0" prefWidth="158.0" text="Identifiants incorrects." textFill="#fa1c34" translateY="-150.0" visible="false" />
+                  <Button mnemonicParsing="false" onAction="#seConnecterAction" prefHeight="50.0" prefWidth="199.0" text="Se connecter">
+                     <VBox.margin>
+                        <Insets top="33.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="488.0" prefWidth="17.0">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin></Separator>
+            <VBox fx:id="vbSignUp" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="476.0" prefWidth="543.0">
+               <children>
+                  <Label fx:id="lbSignUp" alignment="CENTER" text="S'inscrire" textFill="#302a74" VBox.vgrow="NEVER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <GridPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="550.0">
+                     <columnConstraints>
+                        <ColumnConstraints fillWidth="false" halignment="RIGHT" hgrow="SOMETIMES" maxWidth="613.0" minWidth="10.0" prefWidth="259.0" />
+                        <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="SOMETIMES" maxWidth="1077.0" minWidth="10.0" prefWidth="394.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                         <RowConstraints maxHeight="92.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="92.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                         <RowConstraints maxHeight="92.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="92.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="*E-mail :" textFill="#302a74" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="*Mot de passe :" textFill="#302a74" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="tfNomComplet" prefHeight="40.0" prefWidth="275.0" promptText="Nom Prénom" GridPane.columnIndex="1" />
+
+                        <TextField fx:id="tfEmailInscription" prefHeight="40.0" prefWidth="275.0" promptText="example@example.example" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="tf1MdpInscription" focusTraversable="false" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="tf2MdpInscription" focusTraversable="false" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="*Nom Complet :" textFill="#302a74">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label prefHeight="63.0" prefWidth="142.0" text="*Confirmer le&#10;mot de passe :" textFill="#302a74" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <PasswordField fx:id="pf1MdpInscription" prefHeight="40.0" prefWidth="275.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <PasswordField fx:id="pf2MdpInscription" prefHeight="40.0" prefWidth="275.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <CheckBox fx:id="cbxAfficherPass" mnemonicParsing="false" onAction="#actionCbxAfficherPass" text="Afficher les mots de passe" translateX="-25.0" translateY="110.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="lbErreurMdp" text="Les mots de passe sont différents" textFill="#fa1c34" translateX="-15.0" translateY="-15.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="100.0" top="75.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <Label style="-fx-text-fill: #302a74;" text="Les champs marqués par * sont obligatoires." translateY="-365.0">
+                     <font>
+                        <Font size="11.0" />
+                     </font></Label>
+                  <Button fx:id="btnSinscrire" maxWidth="-Infinity" mnemonicParsing="false" onAction="#actionbtnSinscrire" prefHeight="50.0" prefWidth="199.0" text="S'inscrire">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <Label alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" text="Tous droits réservés © 2022" textFill="#302a74">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets left="1100.0" top="35.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>
